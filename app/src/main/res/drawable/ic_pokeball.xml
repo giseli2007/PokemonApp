@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- metade de cima -->
+    <path
+        android:fillColor="#EE1515"
+        android:pathData="M4,50 A46,46 0 0 1 96,50 Z" />
+    <!-- metade de baixo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M4,50 A46,46 0 0 0 96,50 Z" />
+    <!-- contorno -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#222224"
+        android:strokeWidth="6"
+        android:pathData="M4,50 A46,46 0 1 1 96,50 A46,46 0 1 1 4,50 Z" />
+    <!-- faixa central -->
+    <path
+        android:fillColor="#222224"
+        android:pathData="M4,46 L96,46 L96,54 L4,54 Z" />
+    <!-- botão central -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#222224"
+        android:strokeWidth="6"
+        android:pathData="M38,50 A12,12 0 1 1 62,50 A12,12 0 1 1 38,50 Z" />
+</vector>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PokemonApp PDM</string>
+    <string name="main_titulo">PokemonApp</string>
+    <string name="main_descricao">Explore os Pokémon da primeira geração. Toque em um deles para ver os detalhes ou segure para removê-lo da lista.</string>
+    <string name="main_botao">Abrir PokemonApp</string>
+    <string name="lista_titulo">PokemonApp</string>
+    <string name="lista_dica">Toque para ver os detalhes · segure para remover</string>
+    <string name="detalhes_voltar">Voltar</string>
+    <string name="desc_imagem_pokemon">Imagem do Pokémon</string>
+</resources>

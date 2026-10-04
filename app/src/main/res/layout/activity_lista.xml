@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/pokemon_red" android:fitsSystemWindows="true" android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingTop="16dp" android:text="@string/lista_titulo" android:textColor="@color/white" android:textSize="28sp" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingTop="4dp" android:paddingBottom="16dp" android:text="@string/lista_dica" android:textColor="@color/pokemon_yellow" android:textSize="13sp"/>
+    <!--  height 0dp + weight 1: a lista ocupa todo o espaço que sobrar  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPokemons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pokedex_background"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+</LinearLayout>

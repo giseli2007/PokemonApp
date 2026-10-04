@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/pokemon_red" android:fitsSystemWindows="true" android:orientation="vertical">
+    <!--  fillViewport: o conteúdo ocupa a tela toda e, com gravity="center", fica no meio  -->
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="24dp">
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="28dp" app:cardElevation="8dp">
+                <!--  gravity="center_horizontal": TODOS os filhos ficam centralizados na horizontal  -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:padding="24dp">
+                    <ImageView android:id="@+id/imgPokemon" android:layout_width="240dp" android:layout_height="240dp" android:background="@drawable/bg_circle_image" android:contentDescription="@string/desc_imagem_pokemon" android:padding="16dp" android:scaleType="fitCenter"/>
+                    <TextView android:id="@+id/txtNome" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center" android:textColor="@color/pokemon_dark" android:textSize="30sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/txtTipo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/bg_tipo" android:paddingStart="18dp" android:paddingTop="6dp" android:paddingEnd="18dp" android:paddingBottom="6dp" android:textSize="14sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/txtDescricao" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center" android:textColor="@color/text_secondary" android:textSize="16sp"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnVoltar" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="28dp" android:text="@string/detalhes_voltar" android:textSize="16sp" app:cornerRadius="16dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
