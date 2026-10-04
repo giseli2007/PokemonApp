@@ -33,7 +33,6 @@ public class DetalhesActivity extends AppCompatActivity {
 
         // O sprite da lista é pequeno (96x96) e fica pixelado em 240dp.
         // A mesma pasta do PokeAPI tem a "official-artwork" em alta resolução: só trocamos o caminho.
-        // (Se preferir o sprite original, use "imagem" direto no load.)
         String imagemGrande = imagem.replace("/sprites/pokemon/", "/sprites/pokemon/other/official-artwork/");
 
         Glide.with(this)
